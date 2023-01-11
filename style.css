@@ -1,6 +1,7 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
     margin:0;
+    color: #213231;
 }
 #nav{
     text-decoration: none;
@@ -11,23 +12,28 @@ body{
 .navbar{
     display: flex;
     justify-content: right;
+    align-items: center;
     padding: 10px 20px;
-    background-color: rgb(102, 2, 55);
+    height: 35px;
+    background-color: #197278;
 }
 #backdrop{
     display: flex;
-    justify-content: space-evenly;
-    margin: 10px;
+    justify-content:space-evenly;
+    column-gap: 10px;
+    margin: 40px;
     padding-top: 20px;
 }
 #right-bd{
-    background-color: aqua;
+    border-color: aqua;
+    padding-top: 10vh;
     width: 55%;
 }
 #left-bd{
-    background-color: aqua;
+    border-color: aqua;
+    border-width: 2px;
     width: 35%;
-    height: 150px;
+    text-align: center;
 }
 #h1{
     font-weight: 700;
@@ -37,7 +43,41 @@ body{
     font-weight: 600;
     margin-top: 8px;
 }
-#right-bd>button{
-    background-color: rgb(5, 142, 142);
+button{
+    background-color: #c44536;
     color: white;
+    padding: 10px 20px;
+    border-width: 0;
+    border-radius: 5px;
+    margin-top: 30px;
+    
+}
+button:hover{
+    background-color: #b43527;
+}
+img{
+    width: 300px;
+    border-radius: 50%;
+    border: 2px;
+    border-color: #213231;
+}
+section#experience{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #edddd4;
+    height: 400px;
+    width: 100%;
+}
+div.horizontal-card{
+    margin-left: 5%;
+    border-style: solid;
+    border-width: 0 0 0 5px;
+    border-color: #213231;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+.horizontal-card>ul{
+    margin-top: 5px;
+    margin-bottom: 0;
 }
